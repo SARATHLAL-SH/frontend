@@ -254,20 +254,39 @@ width: 400px;
     margin: 40px 10px;
   }
   .thirdContainer{
-    /* height: 90vh; */
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-items:center;
+  position: relative;
+   object-fit: cover;
     margin-top: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+ 
+  }
+  .thirdclassImg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .thirdclassImg img{
+    width: 100%;
+  }
+  .parallax-layer{
+    position: absolute;
+    /* top: 380px; */
   }
   .locationContainer{
+  overflow: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   top: 0;
 }
   .locationCard1, .locationCard2, .locationCard3{
+   
     background-color:aliceblue;
-   width: 550px;
+   width: 500px;
    display: flex;
    flex-flow: column;
    align-items: center;
@@ -305,40 +324,67 @@ padding: 40px;
     margin-top: 30px;
   }
   .bookmark{
+    /* position: absolute; */
     font-size: 40px;
     color: white;
     text-align: center;
-    margin: 60px 0px ;
-    padding-top: 80px;
+    /* margin: 60px 0px ; */
+    /* padding-top: 80px; */
   }
   .offersContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 80vh;
-    overflow-x: hidden;
-    position:relative;
+   
+  }
+  .offerwrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 10px;
   }
   .offerImageList{
-    
-    position: absolute;
+  
+    /* padding: 40px 40px; */
+    width: 80%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    overflow: hidden;
-  padding: 0px 160px;
-  object-fit: cover;
+   
+    overflow-x: scroll;
+  /* object-fit: cover; */
+  }
+  .offerImageList::-webkit-scrollbar{
+    display: none;
+  }
+  .offerdiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex: none;
+    padding: 10px;
+    
   }
   .offerimg1, .offerimg2,.offerimg3,.offerimg4,.offerimg5{
-    border-radius: 250px;
-    width: 500px;
-    height: 500px;
+    border-radius: 150px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    margin: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
     /* position: absolute; */
   }
   .offerimg1 img, .offerimg2 img .offerimg3 img, .offerimg4 img, .offerimg5 img{
-    width: 100%;
+    width: auto;
+    height: 100%;
     object-fit: cover;
+    border-radius: 40%;
+  }
+  .backBtn{
+    background-color: bisque;
   }
   .menuContainer{
     background-color: rgb(245, 245, 245);
@@ -402,6 +448,7 @@ font-size: 22px;
     
   }
  .menupricelist{
+  
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -426,14 +473,43 @@ font-size: 22px;
     margin-bottom: 20px;
     padding-bottom: 10px;
    }
-   .aboutUsContainer{
+   .locationContainer2{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
    }
+   .aboutUsContainerP{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.aboutUsContainerP img{
+  width: 100%;
+}
+.parallel{
+  position: absolute;
+}
    .aboutUsContentContainer{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+   }
+   .aboutUsTxt{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+   }
+   .aboutUsImg{
+    /* position: relative; */
+    width: 100%;
+    object-fit: cover;
+    mask-repeat: no-repeat;
+   }
+   .aboutUsImg img{
+    width: 100%;
    }
    .aboutUsContents{
     display: flex;

@@ -54,10 +54,11 @@
 </div>
 </div>
 </div>
-<div class="thirdContainer" style="background-image: url(c-sl-005.jpg);">
-   <div class="bookmark"><h1>Locations</h1>	&#xf02e;<i class='fas fa-bookmark' style='font-size:48px;color:red'></i><i class="fa-solid fa-bookmark"></i></div>
+<div class="thirdContainer">
+    <div class="thirdclassImg"><img src="c-sl-005.jpg"></div>
+   <div class="parallax-layer bookmark"><h1>Locations</h1>	&#xf02e;<i class='fas fa-bookmark' style='font-size:48px;color:red'></i><i class="fa-solid fa-bookmark"></i></div>
 
-<div class="locationContainer">
+<div class="parallax-layer locationContainer">
 <div class="locationCard1">
     <div class="locationCard1img"><img src="c-sl-012-1024x663.webp"></div>
     <p> Morbi vel nisi condimentum, efficitur orci at, vehicula velit. Maecenas ut euismod diam. Integer aliquet turpis eunis!</p>
@@ -92,18 +93,29 @@
     </div>
       
     <div class="offersContainer">
-<h1 class="bookmark1">Specialities</h1>
-    <div class="offerImageList">
-<div class="offerimg1"><img src="offerimg1.jpg"></div>
-<div class="offerimg2"><img src="offerimg2.jpg"></div>
-<div class="offerimg3"><img src="offerimg3.jpg"></div>
-<div class="offerimg4"><img src="offerimg4.jpg"></div>
-<div class="offerimg5"><img src="offerimg5.jpg"></div>
-    </div>
+<h1 id="bookmark1" style="align-items: center;">Specialities</h1></div>
+<div class="offerwrap">
+    <button class="backBtn" id="backBtn">prev</button>
+    <div class="offerImageList" id="offerImageList">
+        <div class="offerdiv">
+            <span class="offerimg1"><img src="offerimg1.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg2.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg3.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg5.jpg" alt=""></span>
+        </div>
+            <div class="offerdiv">
+                <span class="offerimg1"><img src="offerimg4.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg2.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg3.jpg" alt=""></span>
+            <span class="offerimg1"><img src="offerimg5.jpg" alt=""></span>
+            </div>
+        </div>
+    <button id="nextBtn">Next</button>
 </div>
+ 
 
 <div class="menuContainer">
-    <h1 style="text-align: center;">Menu</h1>
+    <h1 id="menuC" style="text-align: center;">Menu</h1>
     <div class="menuimgfrow">
         <div class="menuimgcont">
         <div class="menuimg"><img src="menuimg1.jpg" alt=""> </div>
@@ -186,8 +198,8 @@
         </div>
     </div>
 
-    <div class="locationContainer">
-        <div class="locationCard1">
+    <div class="locationContainer2">
+        <div class="  locationCard1">
             <div class="locationCard1img"><img src="c-sl-012-1024x663.webp"></div>
             <p> Morbi vel nisi condimentum, efficitur orci at, vehicula velit. Maecenas ut euismod diam. Integer aliquet turpis eunis!</p>
             <h2 style="text-align: left;">&#xf041; <i class='fas fa-map-marker' style='font-size:36px'></i>	
@@ -197,7 +209,7 @@
                     <h2>&#xf095; <i class='fas fa-phone' style='font-size:36px'></i>Phone: +1 354 454878</h2>
                     <button class="locationBtn">See on Map</button>
         </div>
-        <div class="locationCard2">
+        <div class=" locationCard2">
             <div class="locationCard1img"><img src="c-sl-011-1024x663.webp"></div>
             <p> Integer iaculis justo lacus, consectetur semper massa consectetur at. Integer vitae est eget elit venenatis efficitur at sit amet ex pulvinar enim commodo semper.</p>
             <h2>&#xf041; <i class='fas fa-map-marker' style='font-size:36px'></i>	
@@ -219,9 +231,12 @@
         </div>
         </div>
 </div>
-<div class="aboutUsContainer" style="background-image: url(aboutbg.webp);">
-    <h1>Press About Us</h1>
-    <div class="aboutUsContentContainer">
+<div class="aboutUsContainerP"><img src="aboutbg.webp">
+    
+    
+    <div class="parallel aboutUsTxt"> <h1>Press About Us</h1></div>
+   
+    <div class=" parallel aboutUsContentContainer">
     <div class="aboutUsContents">
 <div class="aboutUsImage"><img src="aboutimg1.webp"></div>
 <p>
@@ -246,6 +261,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinart tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                             <h1 class="aboutimgHead">Baker Experts</h1>
                             </div>
+                                             
 </div>
 </div>
 <div class="footer">
@@ -265,7 +281,7 @@
         </div>
         </div>
         <div>
-           <span><i class="soc-icon soc-font-icon dt-icon-foursquare"></i></span> ghfgtfgdgfccgnbcvhg
+           <span><i class="soc-icon soc-font-icon dt-icon-foursquare"></i></span> 
            <span><i class="soc-icon soc-font-icon dt-icon-foursquare"></i></span>
            <span><i class="soc-icon soc-font-icon dt-icon-foursquare"></i></span>
            <span><i class="soc-icon soc-font-icon dt-icon-foursquare"></i></span>
