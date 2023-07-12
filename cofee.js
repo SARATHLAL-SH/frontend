@@ -22,23 +22,36 @@ window.addEventListener('scroll', () => {
         layer2.style.transform = 'translateY(' + ypos2 + 'px)';
     })
 });
-let scrollcontainer = document.getElementById("offerImageList");
+var scrollcontainer = document.getElementById("offerImageList");
 let prevbtn = document.getElementById("backBtn");
 let nextBtn = document.getElementById("nextBtn");
-// scrollcontainer.addEventListener("wheel", (evt) => {
-//     evt.preventDefault();
-//     scrollcontainer.scrollLeft += evt.deltaY;
-// });
+scrollcontainer.addEventListener("wheel", (evt) => {
+    const scrollAmount = evt.deltaY > 0 ? 100 : -100
+    scrollcontainer.scrollBy({
+        top: 0,
+        left: scrollAmount,
+        behavior: "smooth"
+    });
+    evt.preventDefault();
+
+});
 var screenWidth = window.innerWidth;
 var per = screenWidth * 0.8;
-var divwidth = (screenWidth - per) - 400
+var divwidth = 400
 var wid = document.getElementById("bookmark1");
-wid.innerHTML = (400 / per) * 100;
+wid.innerHTML = document.documentElement.scrollTop;
 nextBtn.addEventListener("click", () => {
     scrollcontainer.style.scrollBehavior = "smooth";
-    scrollcontainer.scrollLeft += divwidth;
+    scrollcontainer.scrollLeft += 400;
 });
 prevbtn.addEventListener("click", () => {
     scrollcontainer.style.scrollBehavior = "smooth";
     scrollcontainer.scrollLeft -= 400;
 });
+showImage = (imgId) => {
+    var imgdiv = document.getElementById("offerdisplayContianer");
+    var image = document.getElementById("modal-image");
+    image.src = imgId;
+    imgdiv.style.display = 'flex';
+
+} 
